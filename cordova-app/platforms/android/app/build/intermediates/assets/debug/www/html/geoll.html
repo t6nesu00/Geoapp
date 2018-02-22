@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+
+    <script type="text/javascript" src="../js/cordova.js"></script>
+
+    <script type="text/javascript" src="../js/loader.js"></script>
+
+
+</head>
+
+
+
+<body onload="doit()">
+
+
+
+<div id="menuView"><ul id="menu"></ul></div>
+
+<div id="header">
+
+    <div id="menuButton"></div><h3>Geocoding example</h3>
+
+</div>
+
+<div id="contentView">
+
+    <div id="contentsFrame">
+
+        <section class="demo">
+
+            <h3>Find your address with Latitude and Longitude</h3>
+
+            <p>
+
+               Here you can see the location in map with the help of Latitude and Longitude.<br>
+
+                <br>
+
+              Just fill the required field with correct value. The location will appear in the map with red marker.
+
+
+            </p>
+
+            <span class="smallPanel">Latitude:<input  type="text" id="lat" value="">Longitude:<input  type="text" id="lng" value=""><button  onclick="doit()">Search</button></span>
+
+
+            <div class="map" id="map_canvas1">
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhwdhnWDehOC0wQObhjJptBags7VEJ6vo"> </script>
+<script type="text/javascript" src="../js/myfunction.js"></script>
+
+</body>
+
+
+
+</html>

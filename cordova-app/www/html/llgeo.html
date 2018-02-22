@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+
+    <script type="text/javascript" src="../js/cordova.js"></script>
+
+    <script type="text/javascript" src="../js/loader.js"></script>
+
+
+</head>
+
+
+
+<body onload="doit()">
+
+
+
+<div id="menuView"><ul id="menu"></ul></div>
+
+<div id="header">
+
+    <div id="menuButton"></div><h3>Geocoding example</h3>
+
+</div>
+
+<div id="contentView">
+
+    <div id="contentsFrame">
+
+        <section class="demo">
+
+            <h3>Geocoding</h3>
+
+            <p>
+
+                This plugin supports geocoding. You can convert address or landscape names to latitude and longitude.<br>
+
+                <br>
+
+                In Android, this plugin uses Google Play Services feature, while in iOS this plugin uses iOS feature (not Google).
+
+                It means the geocoding results are different on Android and iOS.
+
+
+            </p>
+
+            <span class="smallPanel"><input  type="text" id="add" value=""><button id="doitbtn">Search</button></span>
+
+
+            <div class="map" id="map_canvas1">
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhwdhnWDehOC0wQObhjJptBags7VEJ6vo"> </script>
+<script type="text/javascript" src="../js/myfunction.js"></script>
+
+</body>
+
+
+
+</html>
